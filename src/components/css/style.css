@@ -38,6 +38,34 @@ html{
     min-width: 20rem;
     min-height: 35rem;
 }
+ .info {
+     position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 45%;
+      z-index: 4;
+ }
+
+ .location {
+     margin-top: 1.5rem;
+     text-align: center;
+     font-weight: 800;
+     font-size: 3rem;
+     font-size: 400;
+ }
+
+ .fa-street-view{
+     animation: rotates 3s linear infinite alternate;
+ }
+
+ @keyframes rotates {
+     from {
+         transform: translateX(-0.5rem);
+     }
+     to{
+         transform: translateX(0.5rem);
+     }
+ }
 
 .wave {
     opacity:0.3;
@@ -78,6 +106,7 @@ html{
     transform: translate3d(0, 0, 0);
 }
 
+
 @keyframes drift{
     from {
         transform: rotate(0deg);
@@ -87,20 +116,15 @@ html{
     }
 }
 
-/* @media (max-height: 500px) {
-    .box {
-        height: 80vh;
-    }
-    .wave {
-        top:115%;
-        
-    }
-} */
+ 
 
-body > span {
- width: 100vw;
- text-align: center;
- color: grey;
+#date {
+   text-align: center;
+    margin-top: 0.5rem;
+    color: #57606f;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 .inputData{
@@ -124,4 +148,73 @@ body > span {
     text-align: center;
     font-size: 2rem;
     margin: 2rem auto;
+}
+
+.temp{
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.tempmin_max {
+    text-align: center;
+    margin-top: 0.3rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #57606f;
+}
+
+
+#weathercon{
+    height: 55% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem ;
+}
+
+#weather .fas {
+    font-size: 6rem;
+    animation: fas-anime 3s linear infinite alternate;
+}
+
+@keyframes fas-anime {
+    from {
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.8);
+    }
+}
+
+@media (max-width : 600px){
+.box{
+    width: 90vw;
+    height: 80vh;
+}
+.wave{
+    top: 85%;
+}
+#weathercon {
+    font-size: 5rem;
+}
+.info{
+    font-size: 1.5rem;
+}
+}
+
+@media (max-height: 500px) {
+    .box {
+        height: 80vh;
+    }
+    .wave {
+        top:115%;
+        
+    }
+} 
+
+body > span {
+ width: 100vw;
+ text-align: center;
+ color: grey;
 }
