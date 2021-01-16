@@ -13,15 +13,19 @@ const Tempapp = () => {
 
                         }} />
                 </div>
-            </div>
-            <div className="info">
-                <h2 className="location">
-                    <i class="fas fa-street-view"> Dehradun</i>
-                </h2>
-                <h1 className="temp">
 
+                <div className="info">
+                    <h2 className="location">
+                        <i class="fas fa-street-view"></i> Dehradun
+                </h2>
+                    <h1 className="temp">
+                        5.25Cel
                 </h1>
-                <h3 className="tempmin_max">Min : 5.25Cel | Max : 5.25Cel</h3>
+                    <h3 className="tempmin_max">Min : 5.25Cel | Max : 5.25Cel</h3>
+                </div>
+                <div className="wave-one"></div>
+                <div className="wave-two"></div>
+                <div className="wave-three"></div>
             </div>
         </>
     )
